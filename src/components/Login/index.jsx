@@ -14,7 +14,7 @@ const Login = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:7000/api/users/login";
+			const url = "https://todoapp-api-t8zi.onrender.com/api/users/login";
 			const res = await axios.post(url, data);
 			console.log(res);
 			localStorage.setItem("token", res.data);

@@ -20,7 +20,7 @@ const Signup = () => {
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
-			const url = "http://localhost:7000/api/users/register";
+			const url = "https://todoapp-api-t8zi.onrender.com/api/users/register";
 			const res = await axios.post(url, data);
 			alert(res.data.status);
 
