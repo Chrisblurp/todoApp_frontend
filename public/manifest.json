@@ -1,6 +1,9 @@
 {
   "short_name": "React App",
   "name": "Create React App Sample",
+  "browser_action": {
+    "default_popup": "src/popup.html"
+  },
   "icons": [
     {
       "src": "favicon.ico",
